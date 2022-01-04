@@ -1,0 +1,248 @@
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 56px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background-color: #555;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: var(--header-height);
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 10;
+}
+.header-left,
+.header-center,
+.header-right {
+  cursor: pointer;
+}
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-left-icon-wrap {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+.header-left-icon {
+  font-size: 2.4rem;
+}
+.logo {
+  padding: 18px 14px 18px 16px;
+}
+.logo-youtube {
+  display: block;
+  width: 120px;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  height: 40px;
+  background-color: var(--primary-color);
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+.serach-bar-input {
+  height: 100%;
+  width: 530px;
+  border: none;
+  outline: none;
+  padding: 0 6px;
+  font-size: 1.6rem;
+}
+
+.icon-keyboard {
+  font-size: 1.6rem;
+  margin: 12px;
+}
+
+.search-bar-btn {
+  position: relative;
+  height: 38px;
+  width: 64px;
+  outline: none;
+  border: none;
+  background-color: #f8f8f8;
+  padding: 0 6px;
+  cursor: pointer;
+}
+.search-bar-btn:hover {
+  border-color: #c6c6c6;
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}
+.search-bar-btn::after {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #ccc;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.search-bar-icon {
+  font-size: 1.8rem;
+}
+
+.icon-wrap {
+  background-color: #f9f9f9;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-microphone {
+  font-size: 2.2rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+.header-right-item {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  margin: 0 6px;
+}
+.header-right-icon {
+  font-size: 2.4rem;
+}
+.header-right-wrap-user {
+  width: 60px;
+  height: 40px;
+  padding: 4px 14px;
+}
+.header-right-user {
+  width: 32px;
+  border-radius: 50%;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: var(--header-height);
+  background-color: var(--primary-color);
+  width: 240px;
+  overflow-y: hidden;
+}
+
+.sidebar:hover {
+  overflow-y: scroll;
+}
+
+.sidebar-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.sidebar-list::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  width: 224px;
+}
+.sidebar-item {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sidebar-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+  font-size: 2.4rem;
+}
+.sidebar-text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #030303;
+  white-space: nowrap;
+}
+.sidebar-heading {
+  padding: 0px 24px;
+  font-size: 1.4rem;
+  color: #606060;
+  font-weight: 500;
+  margin: 16px 0 0 0;
+  letter-spacing: 0.5px;
+}
+.sidebar-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.sidebar-links {
+  padding: 16px 24px 0;
+  list-style: none;
+}
+.sidebar-link {
+  text-decoration: none;
+  color: #606060;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+.sidebar-copyright {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  text-transform: none;
+  color: #909090;
+  padding: 16px 24px;
+}
