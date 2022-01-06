@@ -4,6 +4,8 @@
   --black-color: #000000;
 
   --header-height: 56px;
+  --category-height: 56px;
+  --sidebar-width: 240px;
 }
 * {
   box-sizing: inherit;
